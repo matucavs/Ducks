@@ -1,0 +1,218 @@
+* {
+  font-family: "Public Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: stretch;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.main-box {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+/* ---------HEADER---------- */
+header{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.logo {
+  
+  width: 10rem;
+  /* position: absolute; */
+  z-index: 2;
+  /* top: 5%;
+  left: 50%; */
+}
+.banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+.title1 {
+  text-transform: uppercase;
+  color:whitesmoke;
+  font-size: 4rem;
+  text-align: center;
+  /* top: 5px; */
+  background-color: DimGrey;
+  /* position: absolute; */
+}
+/* ---------MID BANNER---------- */
+.main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 55px;
+  flex-grow: 0;
+  background-color: DimGrey;
+}
+h2 {
+  color: whitesmoke;
+  font-size: 20px;
+}
+/* ---------NAVBAR---------- */
+nav {
+  display: flex;
+  background-color: CornflowerBlue;
+  min-width: 30vh;
+  min-height: 10vh;
+  align-items:center;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 10vh;
+  gap: 3rem;
+  padding: 2rem;
+  list-style-type: none;
+}
+.nav-list li {
+  cursor: pointer;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+.nav-list a {
+  font-size: 1.2rem;
+  color: whitesmoke;
+  text-decoration: none;
+}
+/* ---------MAIN---------- */
+
+.maintext {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.maintext ul {
+  padding-top: 2vw;
+  padding-left: 2vw;
+  list-style-type: none;
+  max-width: 65%;
+}
+.maintext li {
+  list-style-type: none;
+}
+.containerT {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100vh;
+}
+.flex-container {
+  /* max-width: 1200px; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.sportcontent {
+  flex: 1;
+  /* max-width: 400px; */
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sportcontent p:nth-child(2) {
+  text-indent: 50px;
+}
+.regulations-content {
+  flex: 1;
+  /* max-width: 400px; */
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.numlist {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+.numlist > li {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.allcontent {
+  flex: 1;
+  /* max-width: 400px; */
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.all-list {
+  list-style-type: circle;
+  padding-left: 2rem;
+}
+.all-list > li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.sub-list {
+  list-style-type: lower-alpha;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+h4,
+h5 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.top-container {
+  flex: 0; /* Ocupar el ancho completo */
+  max-width: 100%;
+  margin: 0rem;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* ---------ANIM---------- */
+a.activeP {
+  color: black;
+  text-shadow: 2px 2px 4px #0000004b;
+}

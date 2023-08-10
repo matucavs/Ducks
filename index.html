@@ -4,36 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MDHL</title>
+    <title>MDHL Home</title>
     <link rel="icon" type="image/x-icon" href="./img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/flex.css">
 </head>
 
 <body>
     <header>
-        <img src="./img/logo.png" width="400" alt="Mighty Ducks League logo">
-        <h1>Mighty Ducks Hockey League</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About MDHL</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <img class="banner" src="./img/img1.jpg" alt="Mighty Ducks League logo">
+        <h1 class="title1">Mighty Ducks Hockey League</h1>
+        
     </header>
-    <main>
-        <section>
-            <img src="./img/hockey1.jpg" width="600" alt="Player1">
-            <h2>Upcoming Events</h2>
-            <dl>
-                <dt><b>August 4</b></dt>
-                <dd>MDSL Fundraiser</dd>
+    <nav>
+        <img class="logo" src="./img/logo.png" alt="Logo">
+        <ul class="nav-list">
+            <li><a class="activeP" href="#">Home</a></li>
+            <li><a href="info.html">Game Information</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="about.html">About MDHL</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="container">
 
-                <dt><b>August 16</b></dt>
-                <dd>Season Kick-off: Meet the Teams</dd>
+        <section class="main-box">
+            <div class="main-title">
+                <h2 class="title2">Upcoming Events</h2>
+            </div>
 
-                <dt><b>September 1</b></dt>
-                <dd>First Game of the Season(Check game Schedule for details)</dd>
-            </dl>
+            <article class="maintext">
+                <ul>
+                    <li>
+                        <h3>August 4</h3>
+                        <p>MDSL Fundraiser</p>
+
+                        <h3>August 16</h3>
+                        <p>Season Kick-off: Meet the Teams</p>
+
+                        <h3>September 1</h3>
+                        <p>First Game of the Season(Check game Schedule for details)</p>
+                    </li>
+                </ul>
+            </article>
         </section>
     </main>
 </body>

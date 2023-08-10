@@ -5,47 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="icon" type="image/x-icon" href="/img/icon.png">
+    <link rel="icon" type="image/x-icon" href="./img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/flex.css">
 </head>
 
 <body>
     <header>
-        <img src="./img/logo.png" width="400" alt="Mighty Ducks League logo">
-        <h1>Mighty Ducks Hockey League</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About MDHL</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <img class="banner" src="./img/hockey2.jpg" alt="Mighty Ducks League logo">
+        <h1 class="title1">Mighty Ducks Hockey League</h1>
+        
     </header>
-    <main>
-        <section>
-            <img src="./img/hockey2.jpg" width="600" alt="Player2">
-            <h2>Mision</h2>
-            <p>
-                To support young athletes living Chicago's northside neighborhood, who have an interest in
-                learning and playing soccer, with opportunities to learn and practice skills related to the game of
-                hockey, specifically those skills around team cooperation and good sportsmanship
-            </p>
-        </section>
-        <section>
-            <h2>Vision</h2>
-            <p>
-                The Mighty Ducks Hockey League aspires to develop strong, well-rounded and mindful athletes
-                through the building of character, self-discipline, and leadership.
-            </p>
-        </section>
-        <section>
-            <h2>General Information</h2>
-            <p>
-                The Mighty Ducks Soccer League was established in 1996 to provide athletes residing
-                Chicago's northside neighborhoods an environment in which to learn and play hockey. To be a
-                member of MDHL, you must be between the ages of 4 - 12 and reside a Chicago northside
-                neighborhood. MDHL ran by o small full-time staff, and relies on the generous volunteer time of
-                parents and previous league members.
-            </p>
+    <nav>
+        <img class="logo" src="./img/logo.png" alt="Logo">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Game Information</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a class="activeP" href="#">About MDHL</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+    <main class="container">
+
+        <section class="main-box">
+            <div class="main-title">
+                <h2>About MDHL</h2>
+            </div>
+
+            <article class="maintext">
+                <ul>
+                    <li>
+                        <h3>Mision</h3>
+                        <p>
+                            To support young athletes living Chicago's northside neighborhood, who have an interest in
+                            learning and playing soccer, with opportunities to learn and practice skills related to the
+                            game of hockey, specifically those skills around team cooperation and good sportsmanship
+                        </p>
+
+                        <h3>Vision</h3>
+                        <p>
+                            The Mighty Ducks Hockey League aspires to develop strong, well-rounded and mindful athletes
+                            through the building of character, self-discipline, and leadership.
+                        </p>
+
+                        <h3>General Information</h3>
+
+                        <p> The Mighty Ducks Soccer League was established in 1996 to provide athletes residing
+                            Chicago's northside neighborhoods an environment in which to learn and play hockey. To be a
+                            member of MDHL, you must be between the ages of 4 - 12 and reside a Chicago northside
+                            neighborhood. MDHL ran by o small full-time staff, and relies on the generous volunteer time
+                            of parents and previous league members.
+                        </p>
+                    </li>
+                </ul>
+            </article>
         </section>
     </main>
 </body>
