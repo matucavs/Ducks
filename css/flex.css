@@ -1,8 +1,9 @@
 * {
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 .body {
   display: flex;
@@ -21,8 +22,8 @@
   flex-grow: 1;
   flex-shrink: 1;
 }
-/* ---------HEADER---------- */
-header{
+/* #region HEADER */
+header {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -31,29 +32,25 @@ header{
   align-items: stretch;
 }
 .logo {
-  
-  width: 10rem;
-  /* position: absolute; */
-  z-index: 2;
-  /* top: 5%;
-  left: 50%; */
+  width: 6rem;
 }
 .banner {
   width: 100%;
-  height: 300px;
+  height: 100px;
   object-fit: cover;
   filter: brightness(50%);
 }
 .title1 {
   text-transform: uppercase;
-  color:whitesmoke;
+  color: whitesmoke;
   font-size: 4rem;
   text-align: center;
   /* top: 5px; */
   background-color: DimGrey;
   /* position: absolute; */
 }
-/* ---------MID BANNER---------- */
+/* #endregion HEADER */
+/* #region MID BANNER */
 .main-title {
   display: flex;
   justify-content: center;
@@ -67,25 +64,31 @@ h2 {
   color: whitesmoke;
   font-size: 20px;
 }
-/* ---------NAVBAR---------- */
+/* #endregion MID BANNER */
+/* #region NAVBAR */
 nav {
   display: flex;
   background-color: CornflowerBlue;
   min-width: 30vh;
   min-height: 10vh;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
 }
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   min-height: 10vh;
   gap: 3rem;
-  padding: 2rem;
+  padding: 0rem;
   list-style-type: none;
 }
 .nav-list li {
+  align-content: center;
   cursor: pointer;
   flex-grow: 0;
   flex-shrink: 1;
@@ -95,8 +98,8 @@ nav {
   color: whitesmoke;
   text-decoration: none;
 }
-/* ---------MAIN---------- */
-
+/* #endregion NAVBAR*/
+/* #region MAIN */
 .maintext {
   display: flex;
   flex-grow: 1;
@@ -125,7 +128,6 @@ nav {
   height: 100vh;
 }
 .flex-container {
-  /* max-width: 1200px; */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -138,7 +140,6 @@ nav {
 }
 .sportcontent {
   flex: 1;
-  /* max-width: 400px; */
   margin: 10px;
   padding: 20px;
   background-color: #ffffff;
@@ -152,7 +153,6 @@ nav {
 }
 .regulations-content {
   flex: 1;
-  /* max-width: 400px; */
   margin: 10px;
   padding: 20px;
   background-color: #ffffff;
@@ -170,13 +170,13 @@ nav {
   margin-bottom: 20px;
 }
 .allcontent {
+  display: flex;
   flex: 1;
-  /* max-width: 400px; */
-  margin: 10px;
+  margin: 15px;
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
+
   flex-direction: column;
   align-items: flex-start;
 }
@@ -185,24 +185,21 @@ nav {
   padding-left: 2rem;
 }
 .all-list > li {
-  font-size: 16px;
   margin-bottom: 10px;
 }
 .sub-list {
   list-style-type: lower-alpha;
-  margin-top: 10px;
-  margin-left: 20px;
+  padding-left: 1rem;
 }
 h4,
 h5 {
   text-align: center;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 .top-container {
-  flex: 0; /* Ocupar el ancho completo */
+  flex: 0;
   max-width: 100%;
-  margin: 0rem;
-  padding: 20px;
+  padding: 10px;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -211,8 +208,224 @@ h5 {
   justify-content: center;
   align-items: center;
 }
-/* ---------ANIM---------- */
+/* #endregion MAIN */
+/* #region TABLE */
+.tablebox {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.style-table {
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.style-table thead tr {
+  background-color: DimGrey;
+  color: #ffffff;
+  text-align: center;
+}
+.style-table th,
+.style-table td {
+  padding: 0.5rem 1.5rem;
+}
+.style-table tbody tr {
+  border-bottom: 2px solid #dddddd;
+}
+ .cont-tex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.table-text p {
+  height: 3rem;
+  text-align: center;
+}
+.table-text h4 {
+  height: 0.2rem;
+  text-align: center;
+}
+/* #endregion Table */
+/* #region FORM */
+.main-box-register {
+  display: flex;
+  padding-top: 1rem;
+  flex-direction: column;
+  background-color: whitesmoke;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+.container-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container-form .form {
+  margin-top: 30px;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: DimGrey;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 1rem;
+}
+.form .column {
+  /* display: flex; */
+  column-gap: 15px;
+}
+.form :where(.gender-box, .grade-box) {
+  margin-top: 20px;
+}
+.gender-box h3,
+.grade-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .grade-option, .gender, .grade) {
+  display: flex;
+  align-items: center;
+  column-gap: 0.8rem;
+  flex-wrap: wrap;
+}
+.gender input {
+  accent-color: CornflowerBlue;
+}
+.grade input {
+  accent-color: CornflowerBlue;
+}
+
+.gender label {
+  color: #707070;
+}
+.grade label {
+  color: #707070;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.permission {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-evenly;
+  align-items: stretch;
+  text-align: justify;
+}
+.form button {
+  display: block;
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  /* font-weight: 400; */
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: CornflowerBlue;
+}
+.form button:hover {
+  background: black;
+}
+.container-form h4 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+/* #endregion */
+/* #region MAPS */
+.map-container {
+  display: flex;
+  justify-content: center;
+}
+.map-box {
+  padding:2rem 2rem ;
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+  flex-direction: row;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.map {
+  border: 4px solid whitesmoke;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* #endregion MAPS */
+/* #region ANIM */
 a.activeP {
   color: black;
   text-shadow: 2px 2px 4px #0000004b;
 }
+/* #endregion ---------ANIM---------- */
+/* #region Responsive */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .grade-option, .gender, .grade) {
+    row-gap: 15px;
+  }
+  .container-form {
+    flex-direction: column;
+  }
+  .maintext ul {
+    max-width: 95%;
+  }
+  .maintext {
+    justify-content: center;
+  }
+  .nav-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+}
+/* #endregion Responsive */
